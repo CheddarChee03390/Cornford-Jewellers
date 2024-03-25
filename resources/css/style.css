@@ -1,40 +1,40 @@
-*{
-    margin:0px;
-    padding:0px;
-    margin-left:0px;
-    padding-left:0px;
-    padding-top:0px;
-    left:0px;
-    }
+* {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-top: 0px;
+  left: 0px;
+}
 
 
 html {
 
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .image-container {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .image-container img {
 
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 
@@ -42,112 +42,113 @@ strong {
 /* Header */
 
 header {
-    display: flex;
-    align-items: center;
-    padding: 1rem 1rem;
-    background-color: rgb(255, 255, 255);
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-    
-    
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-color: rgb(255, 255, 255);
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+
+
 }
 
 nav ul {
-    padding-right: 7vh
+  padding-right: 7vh
 }
 
 header .logo-small {
-    display: none;
+  display: none;
 }
 
 header .logo-small,
-header .logo-big, 
+header .logo-big,
 header .logo-text {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .logo-text img {
-    width: 15vh;
+  width: 15vh;
 }
 
 
 nav li {
-    display: inline;
-    padding-right: 2rem;
+  display: inline;
+  padding-right: 2rem;
 }
 
 nav li:last-child {
-    padding-right: 0;
+  padding-right: 0;
 }
 
 @media only screen and (max-width: 990px) {
-    header .logo-big {
-        display: none;
-    }
+  header .logo-big {
+    display: none;
+  }
 
-    header .logo-small {
-        display: block;
-    }
-    header .logo-text{
-      display: none;
-    }
+  header .logo-small {
+    display: block;
+  }
+
+  header .logo-text {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 540px) {
-    header {
-        flex-direction: column;
-        padding-left: 0;
-        padding-right: 0;
-        position: fixed;
-        top: 0px;
-        z-index: 1;
-           }
+  header {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+  }
 
-    header .logo-small {
-        margin-bottom: 1rem;
-    }
+  header .logo-small {
+    margin-bottom: 1rem;
+  }
 }
 
 /*Mission Section*/
 
 #what-we-do .image-container {
-    height: 40rem;
-    background-image: url(../images/splash-1.webp);
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    width: 100%;
-    top: 125px;
+  height: 40rem;
+  background-image: url(../images/splash-1.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  top: 125px;
 
 }
 
 #what-we-do .image-container .mission-content {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .mission-content {
-    display: flex;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 #our-mission {
-    height: 20rem;
-    width: 50%;
-    flex-grow: 0;
-    flex-shrink: 1;
-    background-color: rgba(0, 0, 0, 0.493);
-    color: rgba(255, 255, 255, 0.815);
-    padding: 1rem 5%;
-    text-align: center;
-    line-height: 1.2;
-    font-family: "Roboto", serif;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+  height: 20rem;
+  width: 50%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  background-color: rgba(0, 0, 0, 0.493);
+  color: rgba(255, 255, 255, 0.815);
+  padding: 1rem 5%;
+  text-align: center;
+  line-height: 1.2;
+  font-family: "Roboto", serif;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
 
 }
 
@@ -160,11 +161,17 @@ nav li:last-child {
   background-color: #f3f3f3;
 }
 
+#features-section .image-container .content {
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 .feature {
   flex: 1;
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  
 }
 
 .feature .image-container {
@@ -175,6 +182,8 @@ nav li:last-child {
 
 .feature .content {
   padding: 2.5rem 0;
+  
+  
 }
 
 .feature h2 {
@@ -202,13 +211,13 @@ nav li:last-child {
   }
 
   .feature h2 {
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 1.3;
-    
+
   }
 
   .feature h3 {
-    font-size: .875rem;
+    font-size: .1rem;
     line-height: 1.4;
   }
 }
@@ -229,6 +238,61 @@ nav li:last-child {
   }
 }
 
-.center {
-  text-align: center;
+
+/* Team Section */
+
+#meet-the-team .content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem
+
 }
+
+#meet-the-team .image-container {
+  background-image: url(../images/splash-2.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed;
+
+}
+
+#meet-the-team .image-container .content {
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+#meet-the-team .image-container .content .member {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: default;
+  align-items: default;
+  width: 18.75rem;
+  background-color: white;
+}
+
+#meet-the-team .image-container .content .member .photo {
+  display: flex;
+  flex-direction: default;
+  justify-content: center;
+  align-items: center;
+  height: 28.125rem;
+  background-color: white;
+  margin-bottom: 0.5rem;
+  
+ 
+}
+
+.Description {
+  width: 18.75rem;
+  text-align: center;
+  padding: 0.1rem 0rem 2rem;
+  line-height: 1.1;
+  color: rgb(0, 0, 0);
+}
+
+/*#meet-the-team .image-container .content .member .photo img {
+  height: 400px;
+}*/
