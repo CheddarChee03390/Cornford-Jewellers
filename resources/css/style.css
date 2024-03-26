@@ -269,8 +269,9 @@ nav li:last-child {
   flex-direction: column;
   justify-content: default;
   align-items: default;
-  width: 18.75rem;
+  width: 10.75rem;
   background-color: white;
+  padding: 1rem;
 }
 
 #meet-the-team .image-container .content .member .photo {
@@ -278,17 +279,21 @@ nav li:last-child {
   flex-direction: default;
   justify-content: center;
   align-items: center;
-  height: 28.125rem;
+  flex-wrap: wrap;
   background-color: white;
   margin-bottom: 0.5rem;
   
  
 }
 
+#meet-the-team .image-container .content .member .photo img {
+  flex-shrink: 1;
+}
+
 .Description {
-  width: 18.75rem;
+  width: rem;
   text-align: center;
-  padding: 0.1rem 0rem 2rem;
+  padding: 0rem 0rem 0rem;
   line-height: 1.1;
   color: rgb(0, 0, 0);
 }
